@@ -3,13 +3,13 @@ const path = require('path')
   const menuTemplate = [
       {
         label: 'Game',
-        click(menuItem, browserWindow, event) {
+        click(browserWindow) {
           browserWindow.loadURL(`file://${__dirname}/view/index.html`)
       }
       },
       {
         label: 'Credits',
-        click(menuItem, browserWindow, event) {
+        click(browserWindow) {
           browserWindow.loadURL(`file://${__dirname}/view/cred.html`)
       }
       },
